@@ -14,9 +14,9 @@ export const getUserData = async (uid) => {
         } else {
             throw new Error("Usuario no encontrado en Firestore");
         }
-} catch (error) {
-console.error("Error al obtener datos del usuario:", error);
-throw error;
+    } catch (error) {
+        console.error("Error al obtener datos del usuario:", error);
+        throw error;
     }
 };
 /**
