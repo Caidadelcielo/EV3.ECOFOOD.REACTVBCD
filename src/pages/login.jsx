@@ -49,11 +49,13 @@ export default function Login() {
             <div className="mb-3">
                 <label className="form-label">Correo Electrónico</label>
                 <input
-                type="email"
-                className="form-control"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
+                    type="email"
+                    className="form-control"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    minLength={3}
+                    maxLength={20}
                 />
             </div>
             <div className="mb-3">
